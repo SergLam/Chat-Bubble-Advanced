@@ -34,7 +34,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-RE-8d6">
-                                <rect key="frame" x="79.5" y="821" width="255" height="41"/>
+                                <rect key="frame" x="79.5" y="801" width="255" height="41"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 Serg Liamtsev." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-bE-P5y">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="20.5"/>
@@ -54,7 +54,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YZV-SE-yMp" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" id="6MY-Xg-d1m"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="M4g-RE-8d6" secondAttribute="bottom" id="H53-aV-mc4"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="M4g-RE-8d6" secondAttribute="bottom" constant="20" id="H53-aV-mc4"/>
                             <constraint firstItem="YZV-SE-yMp" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="L63-vv-8Ki"/>
                             <constraint firstItem="M4g-RE-8d6" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="brC-69-Mdx"/>
                         </constraints>
