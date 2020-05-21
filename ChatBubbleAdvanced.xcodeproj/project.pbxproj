@@ -3,25 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		326EBA902053387000F28A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326EBA8F2053387000F28A45 /* AppDelegate.swift */; };
 		326EBA922053387000F28A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326EBA912053387000F28A45 /* ViewController.swift */; };
-		326EBA952053387000F28A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326EBA932053387000F28A45 /* Main.storyboard */; };
 		326EBA972053387000F28A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326EBA962053387000F28A45 /* Assets.xcassets */; };
-		326EBA9A2053387000F28A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326EBA982053387000F28A45 /* LaunchScreen.storyboard */; };
+		7C629EA9247661370006255F /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C629EA8247661370006255F /* BubbleView.swift */; };
+		7C629EAB247662060006255F /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C629EAA247662060006255F /* TabBarVC.swift */; };
+		7C629EB2247663120006255F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C629EB1247663120006255F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		326EBA8C2053387000F28A45 /* ChatBubbleAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubbleAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326EBA8F2053387000F28A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326EBA912053387000F28A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		326EBA942053387000F28A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		326EBA962053387000F28A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		326EBA992053387000F28A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		326EBA9B2053387000F28A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C629EA8247661370006255F /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		7C629EAA247662060006255F /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		7C629EB1247663120006255F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,71 @@
 		326EBA8E2053387000F28A45 /* ChatBubbleAdvanced */ = {
 			isa = PBXGroup;
 			children = (
-				326EBA8F2053387000F28A45 /* AppDelegate.swift */,
-				326EBA912053387000F28A45 /* ViewController.swift */,
-				326EBA932053387000F28A45 /* Main.storyboard */,
-				326EBA962053387000F28A45 /* Assets.xcassets */,
-				326EBA982053387000F28A45 /* LaunchScreen.storyboard */,
-				326EBA9B2053387000F28A45 /* Info.plist */,
+				7C629EB0247662480006255F /* UserStory */,
+				7C629EAF2476623C0006255F /* Application */,
+				7C629EAE247662310006255F /* ReusableViews */,
+				7C629EAD2476621F0006255F /* Resources */,
+				7C629EAC2476620E0006255F /* BundleFiles */,
 			);
 			path = ChatBubbleAdvanced;
+			sourceTree = "<group>";
+		};
+		7C629EAC2476620E0006255F /* BundleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7C629EB4247664AF0006255F /* LaunchScreen */,
+				7C629EB3247664A70006255F /* Plist */,
+			);
+			path = BundleFiles;
+			sourceTree = "<group>";
+		};
+		7C629EAD2476621F0006255F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				326EBA962053387000F28A45 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C629EAE247662310006255F /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				7C629EA8247661370006255F /* BubbleView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		7C629EAF2476623C0006255F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				326EBA8F2053387000F28A45 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7C629EB0247662480006255F /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				7C629EAA247662060006255F /* TabBarVC.swift */,
+				326EBA912053387000F28A45 /* ViewController.swift */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		7C629EB3247664A70006255F /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				326EBA9B2053387000F28A45 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		7C629EB4247664AF0006255F /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7C629EB1247663120006255F /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +151,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Dima Nikolaev";
+				ORGANIZATIONNAME = "Serg Liamtsev";
 				TargetAttributes = {
 					326EBA8B2053387000F28A45 = {
 						CreatedOnToolsVersion = 9.2;
@@ -101,7 +160,7 @@
 				};
 			};
 			buildConfigurationList = 326EBA872053387000F28A45 /* Build configuration list for PBXProject "ChatBubbleAdvanced" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -123,9 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326EBA9A2053387000F28A45 /* LaunchScreen.storyboard in Resources */,
 				326EBA972053387000F28A45 /* Assets.xcassets in Resources */,
-				326EBA952053387000F28A45 /* Main.storyboard in Resources */,
+				7C629EB2247663120006255F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C629EA9247661370006255F /* BubbleView.swift in Sources */,
 				326EBA922053387000F28A45 /* ViewController.swift in Sources */,
+				7C629EAB247662060006255F /* TabBarVC.swift in Sources */,
 				326EBA902053387000F28A45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		326EBA932053387000F28A45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				326EBA942053387000F28A45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		326EBA982053387000F28A45 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				326EBA992053387000F28A45 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		326EBA9C2053387000F28A45 /* Debug */ = {
@@ -265,7 +306,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -275,13 +317,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QWBX2QJ23P;
-				INFOPLIST_FILE = ChatBubbleAdvanced/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dimanikolaev.ChatBubbleAdvanced;
+				DEVELOPMENT_ASSET_PATHS = ChatBubbleAdvanced/Resources/Assets.xcassets;
+				DEVELOPMENT_TEAM = MDWBDEPC5G;
+				INFOPLIST_FILE = ChatBubbleAdvanced/BundleFiles/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serglam.chat-bubble-advanced";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,13 +337,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QWBX2QJ23P;
-				INFOPLIST_FILE = ChatBubbleAdvanced/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dimanikolaev.ChatBubbleAdvanced;
+				DEVELOPMENT_ASSET_PATHS = ChatBubbleAdvanced/Resources/Assets.xcassets;
+				DEVELOPMENT_TEAM = MDWBDEPC5G;
+				INFOPLIST_FILE = ChatBubbleAdvanced/BundleFiles/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.serglam.chat-bubble-advanced";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
