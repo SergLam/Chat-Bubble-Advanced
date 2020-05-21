@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		326EBA8C2053387000F28A45 /* ChatBubbleAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubbleAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		326EBA8C2053387000F28A45 /* ChatBubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326EBA8F2053387000F28A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326EBA912053387000F28A45 /* IncomingMessageLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessageLayerVC.swift; sourceTree = "<group>"; };
 		326EBA962053387000F28A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		326EBA8D2053387000F28A45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				326EBA8C2053387000F28A45 /* ChatBubbleAdvanced.app */,
+				326EBA8C2053387000F28A45 /* ChatBubbles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 			);
 			name = ChatBubbleAdvanced;
 			productName = ChatBubbleAdvanced;
-			productReference = 326EBA8C2053387000F28A45 /* ChatBubbleAdvanced.app */;
+			productReference = 326EBA8C2053387000F28A45 /* ChatBubbles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -354,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.serglam.chat-bubble-advanced";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ChatBubbles;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -374,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.serglam.chat-bubble-advanced";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ChatBubbles;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
